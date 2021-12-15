@@ -6,7 +6,7 @@
 #    By: vgallois <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/24 13:19:21 by vgallois          #+#    #+#              #
-#    Updated: 2021/12/15 16:23:17 by vgallois         ###   ########.fr        #
+#    Updated: 2021/12/15 16:34:44 by vgallois         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,10 @@ NAME	= zoo
 
 SRC		= main.cpp\
 		Animal.cpp\
+		WrongAnimal.cpp\
 		Dog.cpp\
 		Cat.cpp\
+		WrongCat.cpp\
 
 OBJ		= $(addprefix $(OBJDIR),$(SRC:.cpp=.o))
 

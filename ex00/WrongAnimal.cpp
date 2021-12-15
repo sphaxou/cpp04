@@ -1,45 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vgallois <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 15:53:49 by vgallois          #+#    #+#             */
-/*   Updated: 2021/12/15 16:34:19 by vgallois         ###   ########.fr       */
+/*   Updated: 2021/12/15 16:37:35 by vgallois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 #include <iostream>
+
 // Constructors
-Animal::Animal()
+WrongAnimal::WrongAnimal()
 {}
 
-Animal::Animal(const Animal &src)
+WrongAnimal::WrongAnimal(const WrongAnimal &src)
 {
 	*this = src;
 }
 
 // Destructor
-Animal::~Animal()
+WrongAnimal::~WrongAnimal()
 {}
 
 // Overload
-Animal	&Animal::operator=(const Animal &src)
+WrongAnimal	&WrongAnimal::operator=(const WrongAnimal &src)
 {
 	type = src.type;
 	return (*this);
 }
 
 // getter
-std::string	Animal::getType()const
+std::string	WrongAnimal::getType()const
 {
 	return (type);
 }
 
 // Fonctions membres
-void	Animal::makeSound()const
+void	WrongAnimal::makeSound()const
 {
-	std::cout << "Meuh Beeeh or w/e" << std::endl;
+	std::cout << "Meuh Beeh or w/e" << std::endl;
 }
